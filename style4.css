@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before{
+    
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+--minfärg: pink;
+--textstorlek: font-size: 14px;
+--font: font: garamond; 
+}
+
+body{
+    font-size: var(--textstorlek);
+    background: var (pink);
+    font: var(--font);
+}
+
+img{ 
+    margin: 2rem;
+    float: right; 
+}
+
+#item-4{
+    clear: left; 
+
+}
+
+button::after {
+    content: "\f3ff";
+    font-family: "Font Awesome 5 Free";
+font-weight: 900;
+
+
+}
+
+#item-1::first-line{
+    font-size: 100%;
+    text-transform: uppercase; 
+    color:salmon; 
+}
+
+div{
+
+}
+
+#item-4{
+border: 2px solid gray; 
+
+}  
+
+.color{
+    color: violet;
+}
+
+header, div, input {
+    height: 10rem; 
+}
+
+form > #input-1{
+}
+
+@media screen and (max-width:580px ){
+
+    body {
+        background: khaki; 
+        color: aliceblue;
+
+    font-style: garamond; 
+    font-size: 20px; 
+    }
+
+    header{
+        position: absolute;
+        left: 50%;
+        top:50%; 
+        height: 40rem; 
+        width: 100%; 
+        background: url(bridal.jpg);
+        text-transform: uppercase; 
+        margin-bottom: 2px;
+        transform: translate; 50%; 
+    }
+
+
+   #btn{
+       color: blue;
+       border-radius: 10rem;
+       padding: .5rem; 
+       text-decoration: none;
+       text-transform: uppercase; 
+
+}
+
+#btn:hover{
+    animation: skala 2ms ease infinite;
+}
+
+@keyframes skala{
+    0%{
+        transform: scale(2)
+    }
+    40%{
+        transform: rotate(200deg)
+    }
+    60%{ 
+        opacity: .2;
+    }
+    100%{
+        transform: scale(1.2)
+    }
